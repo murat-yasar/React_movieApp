@@ -1,0 +1,35 @@
+.Register {
+  background-image: url('../../assets/login.jpg');
+  height: calc(100vh - 60px); /* subtract 60px of navbar from total height of 100vh */
+  background-size: cover;
+  background-position: 52% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 400px;
+}
+
+.RegisterForm {
+  margin-top: -25vh;
+  padding: 2rem;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+  border-radius: 10px;
+  width: 480px;
+  animation: 0.5s zoomin ease-in-out;
+}
+
+.RegisterForm h1{
+  color: white;
+  text-align: center;
+}
+
+.RegisterForm input, .RegisterForm input:focus{
+  background: transparent;
+  color: white;
+}
+
+@keyframes zoomin {
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
